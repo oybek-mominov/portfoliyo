@@ -1,0 +1,51 @@
+.navigatsiya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.navigatsiya > img {
+    width: 64px;
+}
+
+.navigatsiya ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigatsiya li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navigatsiya a {
+    text-decoration: none;
+    color: rgb(0, 108, 0);
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navigatsiya a:hover {
+    color: rgb(241, 201, 0);
+}
+
+.matn-tili {
+    display: flex;
+    align-items: center;
+}
+
+.matn-tili img {
+    width: 30px;
+    animation: telegram 1s linear infinite;
+}
+
+.matn-tili button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    margin: 5px;
+}
