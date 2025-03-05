@@ -1,9 +1,43 @@
+body {
+    font-family: sans-serif;
+}
+
+.qismlar {
+    margin: 200px 0;
+}
+
+.sarlavha {
+    color: rgb(255, 242, 0);
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin: 20px 10px;
+    font-weight: 400;
+}
+
+.blur {
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    background: rgb(110, 110, 251);
+    filter: blur(5px);
+    margin: 0 20px;
+}
+
+/*--------- umumiy --------------------*/
+
 .navigatsiya {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 10px;
+    background: white;
+}
+
+.scroll {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgb(221, 221, 221);
 }
 
 .navigatsiya > img {
@@ -23,7 +57,6 @@
 .navigatsiya a {
     text-decoration: none;
     color: rgb(0, 108, 0);
-    font-family: sans-serif;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -48,4 +81,26 @@
     border-radius: 50%;
     font-size: 0.9rem;
     margin: 5px;
+}
+
+/*---------- asosiy qism ----------------*/
+
+.asosiy-qism {
+    display: flex;
+    align-items: center;
+}
+
+.asosiy-matn h1 {
+    color: darkblue;
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+.asosiy-matn h3 {
+    color: darkblue;
+    font-weight: 600;
+}
+
+.asosiy-rasm img {
+    width: 100%;
 }
