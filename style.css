@@ -106,6 +106,10 @@ body {
     margin-right: 10px;
 }
 
+.ikonkalar > i {
+    color: rgb(0, 0, 74);
+}
+
 .tugma {
     display: flex;
     justify-content: center;
