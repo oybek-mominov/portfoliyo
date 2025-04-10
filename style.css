@@ -38,8 +38,8 @@ body {
     align-items: center; /* Elementlarni vertikal markazlashtirish */
     box-sizing: border-box; /* Chegaralarni hisobga olish */
     padding: 10px; /* Ichki masofa */
-    background: white; /* Orqa fon rangi */
-    z-index: 10; /* Element ustuvorligi */
+    background: rgb(255, 255, 255); /* Orqa fon rangi */
+    z-index: 100; /* Element ustuvorligi */
 }
 
 .scroll {
