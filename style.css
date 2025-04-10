@@ -1,154 +1,221 @@
+/* Umumiy uslublar */
 body {
-    font-family: sans-serif;
+    font-family: sans-serif; /* Umumiy shrift */
 }
 
 .qismlar {
-    margin: 200px 0;
+    margin-bottom: 200px; /* Faqat pastdan masofa qo'shildi */
+}
+
+/* Har bir qism orasidagi masofa */
+.qism {
+    margin-bottom: 200px; /* Qism orasidagi masofa */
 }
 
 .sarlavha {
-    color: rgb(255, 242, 0);
-    letter-spacing: 2px;
-    font-size: 1.3rem;
-    margin: 20px 10px;
-    font-weight: 400;
+    color: rgb(255, 242, 0); /* Sarlavha matnining rangi */
+    letter-spacing: 2px; /* Harflar orasidagi masofa */
+    font-size: 1.3rem; /* Sarlavha shrift o'lchami */
+    margin: 20px 10px; /* Ichki masofa */
+    font-weight: 400; /* Sarlavha shrift qalinligi */
 }
 
 .blur {
-    display: inline-block;
-    width: 150px;
-    height: 15px;
-    background: rgb(110, 110, 251);
-    filter: blur(5px);
-    margin: 0 20px;
+    display: inline-block; /* Elementni blok sifatida ko'rsatish */
+    width: 150px; /* Element kengligi */
+    height: 15px; /* Element balandligi */
+    background: rgb(110, 110, 251); /* Orqa fon rangi */
+    filter: blur(5px); /* Blur effekti */
+    margin: 0 20px; /* Ichki masofa */
 }
 
 /*--------- umumiy --------------------*/
 
+/* Navigatsiya paneli */
 .navigatsiya {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 10px;
-    background: white;
+    display: flex; /* Flexbox tartibi */
+    justify-content: space-between; /* Elementlarni bo'sh joy bilan ajratish */
+    align-items: center; /* Elementlarni vertikal markazlashtirish */
+    box-sizing: border-box; /* Chegaralarni hisobga olish */
+    padding: 10px; /* Ichki masofa */
+    background: white; /* Orqa fon rangi */
+    z-index: 10; /* Element ustuvorligi */
 }
 
 .scroll {
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 4px rgb(221, 221, 221);
+    position: sticky; /* Navigatsiyani yuqoriga yopishtirish */
+    top: 0; /* Yuqori chekkadan masofa */
+    box-shadow: 0 2px 4px rgb(221, 221, 221); /* Soyani qo'shish */
 }
 
 .navigatsiya > img {
-    width: 64px;
+    width: 64px; /* Logo kengligi */
 }
 
 .navigatsiya ul {
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Ichki masofa */
+    margin: 0; /* Tashqi masofa */
 }
 
 .navigatsiya li {
-    display: inline-block;
-    margin: 0 20px;
+    display: inline-block; /* Elementlarni yonma-yon joylashtirish */
+    margin: 0 20px; /* Elementlar orasidagi masofa */
 }
 
 .navigatsiya a {
-    text-decoration: none;
-    color: rgb(0, 108, 0);
-    font-weight: 600;
-    transition: all 0.3s ease;
+    text-decoration: none; /* Link ostidagi chiziqni olib tashlash */
+    color: rgb(0, 108, 0); /* Link matnining rangi */
+    font-weight: 600; /* Link shrift qalinligi */
+    transition: all 0.3s ease; /* O'tish effekti */
 }
 
 .navigatsiya a:hover {
-    color: rgb(241, 201, 0);
+    color: rgb(241, 201, 0); /* Hover paytida link rangi */
 }
 
+/* Til va Telegram tugmalari */
 .matn-tili {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox tartibi */
+    align-items: center; /* Elementlarni vertikal markazlashtirish */
 }
 
 .matn-tili img {
-    width: 30px;
-    animation: telegram 1s linear infinite;
+    width: 30px; /* Telegram ikonkasi kengligi */
+    animation: telegram 1s linear infinite; /* Telegram animatsiyasi */
 }
 
 .matn-tili button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    margin: 5px;
+    width: 30px; /* Tugma kengligi */
+    height: 30px; /* Tugma balandligi */
+    border-radius: 50%; /* Tugmani yumaloqlash */
+    font-size: 0.9rem; /* Tugma shrift o'lchami */
+    margin: 5px; /* Tugma tashqi masofasi */
 }
 
 /*---------- asosiy qism ----------------*/
 
+/* Asosiy qism */
 .asosiy-qism {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox tartibi */
+    align-items: center; /* Elementlarni vertikal markazlashtirish */
+    margin-bottom: 200px; /* Asosiy qism va keyingi qism orasidagi masofa */
 }
 
 .asosiy-matn h1 {
-    color: darkblue;
-    font-size: 3rem;
-    margin: 30px 0;
+    color: darkblue; /* Matn rangi */
+    font-size: 3rem; /* Matn shrift o'lchami */
+    margin: 30px 0; /* Tashqi masofa */
 }
 
 .asosiy-matn h3 {
-    color: darkblue;
-    font-weight: 600;
+    color: darkblue; /* Matn rangi */
+    font-weight: 600; /* Matn shrift qalinligi */
 }
 
 .ikonkalar {
-    margin-top: 30px;
+    margin-top: 30px; /* Yuqori masofa */
 }
 
 .ikon {
-    margin-right: 10px;
-    color: rgb(0, 0, 74);
+    margin-right: 10px; /* Ikonkalar orasidagi masofa */
+    color: rgb(0, 0, 74); /* Ikonka rangi */
 }
 
+/* Tugma uslubi */
 .tugma {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    position: relative;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    margin: 20px 0;
-    overflow: hidden;
+    display: flex; /* Flexbox tartibi */
+    justify-content: center; /* Elementlarni markazlashtirish */
+    text-decoration: none; /* Tugma ostidagi chiziqni olib tashlash */
+    align-items: center; /* Elementlarni vertikal markazlashtirish */
+    position: relative; /* Tugma ichidagi elementlar uchun nisbiy joylashuv */
+    width: 200px; /* Tugma kengligi */
+    height: 50px; /* Tugma balandligi */
+    border-radius: 5px; /* Tugmani yumaloqlash */
+    margin: 20px 0; /* Tashqi masofa */
+    overflow: hidden; /* Tugma ichidagi ortiqcha qismlarni yashirish */
 }
 
 .tugma > p {
-    margin: 0;
-    color: rgb(39, 50, 64);
-    font-size: 1.3rem;
-    font-weight: 400;
+    margin: 0; /* Tashqi masofa */
+    color: rgb(39, 50, 64); /* Matn rangi */
+    font-size: 1.3rem; /* Matn shrift o'lchami */
+    font-weight: 400; /* Matn shrift qalinligi */
 }
 
 .tugma-fon {
-    display: inline-block;
-    width: 400px;
-    height: 50px;
-    position: absolute;
-    left: 0;
-    background: linear-gradient(to right, blue, red, blue);
-    z-index: -1;
-    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Tugma fonini blok sifatida ko'rsatish */
+    width: 400px; /* Tugma fonining kengligi */
+    height: 50px; /* Tugma fonining balandligi */
+    position: absolute; /* Tugma fonining joylashuvi */
+    left: 0; /* Chap tomondan masofa */
+    background: linear-gradient(to right, rgb(50, 50, 255), rgb(255, 50, 50), rgb(50, 50, 255)); /* Gradient fon */
+    z-index: -1; /* Tugma fonini orqaga o'tkazish */
+    transition: all 0.3s ease-in-out; /* O'tish effekti */
 }
 
 .tugma:hover .tugma-fon {
-    transform: translateX(-200px);
+    transform: translateX(-200px); /* Hover paytida fonni siljitish */
 }
 
 .tugma:hover > p {
-    color: aliceblue;
+    color: aliceblue; /* Hover paytida matn rangi */
 }
 
 .asosiy-rasm img {
-    width: 100%;
+    width: 100%; /* Rasm kengligini konteynerga moslashtirish */
 }
+
+/*----------------- loyihalar ------------------------*/
+
+/* Loyihalar qismi */
+.kontent {
+    display: flex; /* Flexbox tartibi */
+    justify-content: space-between; /* Elementlarni bo'sh joy bilan ajratish */
+    gap: 20px; /* Divlar orasidagi masofa */
+    margin-top: 50px; /* Sarlavha va rasmlar orasidagi masofa */
+    margin-bottom: 200px; /* Loyihalar va keyingi qism orasidagi masofa */
+}
+
+.loyiha {
+    flex: 1; /* Har bir loyiha teng kenglikda */
+    overflow: hidden; /* Ortiqcha qismlarni yashirish */
+    position: relative; /* Element ichidagi joylashuv */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* O'tish effektlari */
+    border-radius: 10px; /* Burchaklarni yumaloqlash */
+    max-width: 300px; /* Rasmlar konteynerining maksimal kengligi */
+    margin: 0 auto; /* Divlarni markazlashtirish */
+}
+
+.loyiha img {
+    width: 100%; /* Rasm kengligini konteynerga moslashtirish */
+    height: auto; /* Rasm balandligini avtomatik belgilash */
+    display: block; /* Rasmni blok sifatida ko'rsatish */
+    transition: transform 0.3s ease; /* Hover paytida o'tish effekti */
+    object-fit: cover; /* Rasmlarni konteynerga moslashtirish */
+}
+
+.loyiha:hover {
+    transform: scale(1.05); /* Divni kattalashtirish */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soyani qo'shish */
+}
+
+.loyiha:hover img {
+    transform: scale(1.1); /* Hover paytida rasmni kattalashtirish */
+}
+
+.loyiha p {
+    text-align: right; /* Sana matnini o'ng tomonga joylashtirish */
+    margin-top: 10px; /* Sana va rasm orasidagi masofa */
+    font-size: 1rem; /* Sana shrift o'lchami */
+    color: #333; /* Sana matnining rangi */
+}
+
+.loyiha a {
+    display: block; /* Linkni blok sifatida ko'rsatish */
+    text-decoration: none; /* Link ostidagi chiziqni olib tashlash */
+}
+
+.loyiha a:hover img {
+    transform: scale(1.1); /* Hover effekti link orqali ham ishlaydi */
+}
+
